@@ -1,7 +1,7 @@
 # Nixos Flake for Dagargo's Overwitch
 - https://github.com/dagargo/overwitch
 
-This flake builds Overwitch v1.1 from source and installs the required udev rules
+This flake builds Overwitch v2.0 from source and installs the required udev rules.
 
 Comes with a devShell.
 

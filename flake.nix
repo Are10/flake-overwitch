@@ -16,8 +16,8 @@
           src = pkgs.fetchFromGitHub {
             owner = "dagargo";
             repo = "overwitch";
-            rev = "1.1";
-            sha256 = "sha256-PVndXjxcP9nIVP0r1KfeYKzMKTqMCdhi6dCL/B85tYw=";
+            rev = "b967193d7fe428da95e5d39546416caa67229473";
+            sha256 = "sha256-OVRPbpGyxark/KZq272u34MhfcTGPmfZVo7SEW2SUYI=";
           };
 
           nativeBuildInputs = with pkgs; [
@@ -34,7 +34,7 @@
             libsndfile
             gettext
             json-glib
-            gtk3
+            gtk4
           ];
 
           postInstall = ''
