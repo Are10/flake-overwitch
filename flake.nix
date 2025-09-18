@@ -13,11 +13,9 @@
       packages = rec {
         overwitch = pkgs.stdenv.mkDerivation {
           name = "overwitch";
-          src = pkgs.fetchFromGitHub {
-            owner = "dagargo";
-            repo = "overwitch";
-            rev = "b967193d7fe428da95e5d39546416caa67229473";
-            sha256 = "sha256-OVRPbpGyxark/KZq272u34MhfcTGPmfZVo7SEW2SUYI=";
+          src = pkgs.fetchzip {
+            url = "https://github.com/dagargo/overwitch/releases/download/2.1/overwitch-2.1.tar.gz";
+            hash = "sha256-LBDlfMEBuEZAROpou2tCQ4hDcGDVmxU5AUveKPORIYc=";
           };
 
           nativeBuildInputs = with pkgs; [
